@@ -1,0 +1,21 @@
+
+<nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link"  routerLinkActive="active"  routerLink="/create">create</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link"  routerLinkActive="active"  routerLink="/temp">temp</a>
+      </li>
+       
+         <li> 
+           <form class="form-inline" action="/action_page.php">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search">
+            <button class="btn btn-success" type="submit">Search</button>
+          </form>
+        </li>
+    </ul>
+  </nav>
+<router-outlet></router-outlet><br/>
+<app-create></app-create><br/>
+<app-temp></app-temp><br/>

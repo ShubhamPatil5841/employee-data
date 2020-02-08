@@ -1,0 +1,35 @@
+ 
+ <div class="container"><br/>
+<div class="row-md-2"><br/>
+    <div class="row-md-2">
+       Name:  <input type="text" class="from-control" placeholder="Employee name" #uname>
+    </div><br/>
+      <div class="row-md-2">
+               <button class="btn btn-primary" (click)="addEmp(uname)">Add Employee</button>&nbsp;
+               <button class="btn btn-danger" (click)="removeEmp()">Remove Employee</button>
+               
+               </div>
+</div>
+
+<br>
+<br>
+<div class="row">
+    <div class="col-md-10">
+      <table class="table">
+          <thead class="thead-dark">
+              <th>Username</th>
+              <th>Action</th>
+          </thead>
+          <tbody>
+              <tr *ngFor='let user of users; index as i'>
+                  <td>{{user.name}}</td>
+                  <td>  <button class="btn btn-danger" (click)="removeitem(i)">Remove Employee</button></td>
+              </tr>
+          </tbody>
+      </table>
+    </div>
+</div>
+
+
+
+  
